@@ -1,0 +1,46 @@
+*  {
+  text-decoration: none;
+}
+
+header h1 {
+  color: white;
+  background-color: rgb(61, 59, 59);
+  margin-bottom: 0;
+  padding: 10px 0 50px 10px;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+a {
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.first {
+  background-color: gray;
+  padding-bottom: 150px;
+}
+
+p {
+  margin: 10px;
+}
+
+footer{
+  color: white;
+  background-color: rgb(61, 59, 59);
+}
+
+footer h2 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 150px 10px;
+}
