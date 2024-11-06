@@ -11,10 +11,3 @@ const lastModified = document.querySelector("#lastModified");
 let modification = new Date(document.lastModified);
 
 lastModified.innerHTML = `Last Modification: ${modification.toLocaleString()}`;
-
-// lastModified.innerHTML = `Last Modification: <span class="highlight">${new Intl.DateTimeFormat(
-// 	"en-US",
-// 	{
-// 		dateStyle: "short"
-// 	}
-// ).format(today)}</span>`;
