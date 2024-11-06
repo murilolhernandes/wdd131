@@ -34,7 +34,6 @@ nav {
 
 a {
   color: white;
-  /* font-weight: 400px; */
   font-weight: bold;
 }
 
@@ -69,27 +68,32 @@ h2, .resources h2 {
   border-radius: 1.3rem 1.3rem 0 0;
 }
 
+.resources {
+  display: flex;
+  flex-direction: column;
+}
+
 .resources h2 {
   padding: 20px 10px;
 }
 
 .links {
-  /* justify-content: center; */
   display: flex;
-  /* flex-direction: column; */
+  height: 100%;
   justify-content: center;
-  /* align-items: center; */
   background-color: white;
   padding: 0;
   margin: 0;
+  border-radius: 1.3rem;
 }
 
 .ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0px;
-  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .ul a {
@@ -97,7 +101,7 @@ h2, .resources h2 {
   padding: 10px 0;
 }
 
-.flex p {
+.flex-container p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: center;
@@ -105,11 +109,28 @@ h2, .resources h2 {
   padding: 40px 100px;
 }
 
-.flex {
+.flex-child, .flex-child2 {
   display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
+}
+
+article h2 {
+  background-color: white;
+  color: navy;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 80%;
+  padding: 10px;
+}
+
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.flex-child2 {
+  display: flex;
 }
 
 img {
