@@ -43,21 +43,10 @@ h1 {
   display: none;
 }
 
-/* .navigation.open::before {
-
-} */
 
 .navigation {
   display: none;
 }
-
-/* .navigation {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  background-color: rgb(75, 34, 141);
-  color: white;
-} */
 
 .navigation.open {
   display: flex;
