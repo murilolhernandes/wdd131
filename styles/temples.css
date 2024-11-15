@@ -10,7 +10,6 @@ header {
   background-color: rgb(75, 34, 141);
   color: white;
   display: flex;
-  flex-wrap: wrap;
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -26,10 +25,6 @@ h1 {
   font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
- 	position: absolute;
-	top: 1rem;
-	right: 1rem;
 }
 
 #menu::before {
@@ -52,23 +47,31 @@ h1 {
 
 } */
 
-/* .navigation {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 1rem;
-  font-size: larger;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-} */
-
 .navigation {
+  display: none;
+}
+
+/* .navigation {
   display: flex;
   flex-direction: column;
   list-style: none;
   background-color: rgb(75, 34, 141);
   color: white;
-  margin-top: 2rem;
+} */
+
+.navigation.open {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  background-color: rgb(75, 34, 141);
+  color: white;
+}
+
+header.open {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
 }
 
 .navigation a {
