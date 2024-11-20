@@ -34,7 +34,7 @@
     display: block;
  }
 
- .icon::before {
+ .icon::after {
     content: " ⛅";
     font-size: 30px;
   }
