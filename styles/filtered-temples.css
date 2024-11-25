@@ -142,11 +142,11 @@ p {
   content: "☰";
 }
 
-#menu span {
+/* #menu span {
   visibility: hidden;
-  /* display: none; */
+  display: none;
   color: white;
-}
+} */
 
 footer {
   background-color: rgb(75, 34, 141);
