@@ -142,9 +142,10 @@ p {
   content: "☰";
 }
 
-/* span {
-  display: none;
-} */
+span {
+  /* display: none; */
+  color: white;
+}
 
 footer {
   background-color: rgb(75, 34, 141);
