@@ -142,7 +142,7 @@ p {
   content: "☰";
 }
 
-span {
+#menu span {
   /* display: none; */
   color: white;
 }
