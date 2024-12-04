@@ -1,0 +1,98 @@
+/* .bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+/* .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+  margin: 0 1rem;
+  padding: 0;
+  max-width: 1000px;
+  justify-self: center;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  color: #333333;
+}
+
+p, a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+a {
+  text-align: center;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.bangers {
+  font-family: "Bangers", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.blue {
+  margin: 0;
+  color: #003366;
+}
+
+.charcoal {
+  margin: 0;
+  color: #333333;
+}
+
+.white {
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+
+.amber {
+  margin: 0;
+  color: #ffbf00;
+  background-color: black;
+}
