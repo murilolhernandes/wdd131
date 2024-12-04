@@ -45,8 +45,9 @@ p, a {
   padding: 10px 0;
 }
 
-a {
+nav {
   text-align: center;
+  padding: 10px;
 }
 
 .montserrat {
