@@ -1,8 +1,8 @@
 const today = new Date();
-document.getElementById("currentYear").innerHTML = `©️ ${today.getFullYear()} | Murilo Luiz Hernandes | Idaho`;
+document.getElementById("currentYear").innerHTML = `©️${today.getFullYear()} | Murilo Luiz Hernandes | Idaho`;
 document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-const productName = document.getElementById("product-name");
+// const productName = document.getElementById("product-name");
 
 const products = [
   {
@@ -32,3 +32,15 @@ const products = [
   }
 ];
 
+document.getElementById("product-name").innerHTML += products.map((product) => `<option value="${product.id}">${product.name}</option>`).join("");
+
+// or
+
+// const selectElement = document.getElementById('product-name');
+
+// products.forEach(product => {
+//   const option = document.createElement('option');
+//   option.value = product.id;
+//   option.text = product.name;
+//   selectElement.appendChild(option);
+// });
