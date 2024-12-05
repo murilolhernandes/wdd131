@@ -69,13 +69,15 @@ fieldset {
   appearance: none;
 }
 
-#textarea, input[type="date"] {
+#textarea, input[type="date"], select {
   font-family: sans-serif;
   font-size: .8rem;
 }
 
-label input[type="checkbox"] {
+.wf1 label input[type="checkbox"] {
   margin-right: 6px;
+  width: 18px;
+  height: 18px;
 }
 
 .wf1 input[type="submit"] {
@@ -86,6 +88,7 @@ label input[type="checkbox"] {
   font-weight: bold;
   width: 100%;
   background-color: #eee;
+  color: #000;
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 0;
 }
