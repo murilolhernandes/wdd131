@@ -21,13 +21,13 @@
       <form method="get" action="review.html" class="wf1">
         <fieldset>
           <div class="product-name labels">
-            <label>Product Name
+            <label>Product Name <span class="required">*</span>
               <select name="subject" id="product-name" required>
                 <option value="" id="select-product-menu" disabled>Select a Product ...</option></select>
             </label>
           </div>
           <div class="labels">
-            <div>Overall Rating</div>
+            <div>Overall Rating <span class="required">*</span></div>
             <div class="stars">
               <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
               <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="installation labels">
-            <label class="date-of-installation">Date of Installation
+            <label class="date-of-installation">Date of Installation <span class="required">*</span>
               <input type="date" id="date" name="dateOfInstallation" required>
             </label>
           </div>

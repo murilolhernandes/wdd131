@@ -93,6 +93,10 @@ fieldset {
   border-radius: 0;
 }
 
+.required {
+  color: red;
+}
+
 /* --------- Review Stars ---------- */
 
 input[type="radio"] {
