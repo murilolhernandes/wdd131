@@ -1,0 +1,78 @@
+/* --------- Universal Contents --------- */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  height: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-self: center;
+}
+
+/* --------- Heading Contents --------- */
+
+header {
+  background-color: rgb(78, 7, 51);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem; 
+}
+
+.labels {
+  padding-top: 1rem;
+}
+
+label input[type="checkbox"] {
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+/* --------- Review Stars ---------- */
+
+input[type="radio"] {
+  display: none;
+  position: relative;
+  caret-color: rgba(0,0,0,0);
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.stars > label {
+  color: gold;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  caret-color: rgba(0,0,0,0);
+}
+
+.stars > label:hover {
+  color: #000;
+}
+
+.stars > label::before {
+  content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+  content: "\2605";
+}
+
+/* --------- Footer Contents --------- */
