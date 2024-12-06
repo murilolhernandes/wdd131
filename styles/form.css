@@ -149,3 +149,16 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
+
+/* --------- Review Website --------- */
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem 0;
+}

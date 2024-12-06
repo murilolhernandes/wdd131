@@ -32,7 +32,59 @@ const products = [
   }
 ];
 
-document.getElementById("product-name").innerHTML += products.map((product) => `<option value="${product.id}">${product.name}</option>`).join("");
+// document.querySelector("#product-name").innerHTML += products.map((product) => `<option value="${product.id}">${product.name}</option>`).join("");
+
+if (window.location.pathname === "/wdd131/form.html") {
+  document.querySelector("#product-name").innerHTML += products.map((product) => `<option value="${product.id}">${product.name}</option>`).join("");
+
+  document.querySelector(".wf1").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let counter = localStorage.getItem("reviewCounter");
+    counter = counter ? parseInt(counter) + 1 : 1;
+    localStorage.setItem("reviewCounter", counter);
+    window.location.href = "review.html";
+  });
+} else if (window.location.pathname === "/wdd131/review.html") {
+    let counter = localStorage.getItem("reviewCounter");
+    console.log(`Counter value: ${counter}`);
+    document.getElementById("reviewCounter").textContent = `Reviews: ${counter}`;
+}
+
+// const submit = document.querySelector('input[type="submit"]');
+// const review = document.querySelector(".reviewCounter");
+
+// if (counter === null) {
+//   counter = 0;
+// } else {
+//   counter = parseInt(counter);
+// }
+
+// counter++;
+
+// localStorage.setItem("reviewCounter", counter);
+// document.querySelector(".wf1").addEventListener("submit", function(event) {
+//   let counter = localStorage.getItem("reviewCounter");
+//   counter = counter ? parseInt(counter) + 1 : 1;
+//   localStorage.setItem("reviewCounter", counter);
+//   document.getElementById("reviewCounter").innerHTML = `Reviews: ${counter}`;
+// })
+
+// if (reviewCount !== 0) {
+//   review.textContent = `Reviews: ${reviewCount}`;
+// } else {
+//   review.textContent = `Nobody loves us :(`;
+//   console.log("Nobody loves us :(");
+// }
+
+// reviewCount++;
+
+// localStorage.setItem("reviewCount-ls", reviewCount);
+
+// submit.addEventListener("click", function() {
+  
+//   // reviewCount++;
+//   // review.innerHTML = `Reviews: ${reviewCount}`;
+// })
 
 // or
 
