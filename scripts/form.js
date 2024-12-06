@@ -2,8 +2,6 @@ const today = new Date();
 document.getElementById("currentYear").innerHTML = `©️${today.getFullYear()} | Murilo Luiz Hernandes | Idaho`;
 document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-// const productName = document.getElementById("product-name");
-
 const products = [
   {
     id: "fc-1888",
@@ -32,8 +30,6 @@ const products = [
   }
 ];
 
-// document.querySelector("#product-name").innerHTML += products.map((product) => `<option value="${product.id}">${product.name}</option>`).join("");
-
 if (window.location.pathname === "/wdd131/form.html") {
   document.querySelector("#product-name").innerHTML += products.map((product) => `<option value="${product.id}">${product.name}</option>`).join("");
 
@@ -49,50 +45,3 @@ if (window.location.pathname === "/wdd131/form.html") {
     console.log(`Counter value: ${counter}`);
     document.getElementById("reviewCounter").textContent = `Reviews: ${counter}`;
 }
-
-// const submit = document.querySelector('input[type="submit"]');
-// const review = document.querySelector(".reviewCounter");
-
-// if (counter === null) {
-//   counter = 0;
-// } else {
-//   counter = parseInt(counter);
-// }
-
-// counter++;
-
-// localStorage.setItem("reviewCounter", counter);
-// document.querySelector(".wf1").addEventListener("submit", function(event) {
-//   let counter = localStorage.getItem("reviewCounter");
-//   counter = counter ? parseInt(counter) + 1 : 1;
-//   localStorage.setItem("reviewCounter", counter);
-//   document.getElementById("reviewCounter").innerHTML = `Reviews: ${counter}`;
-// })
-
-// if (reviewCount !== 0) {
-//   review.textContent = `Reviews: ${reviewCount}`;
-// } else {
-//   review.textContent = `Nobody loves us :(`;
-//   console.log("Nobody loves us :(");
-// }
-
-// reviewCount++;
-
-// localStorage.setItem("reviewCount-ls", reviewCount);
-
-// submit.addEventListener("click", function() {
-  
-//   // reviewCount++;
-//   // review.innerHTML = `Reviews: ${reviewCount}`;
-// })
-
-// or
-
-// const selectElement = document.getElementById('product-name');
-
-// products.forEach(product => {
-//   const option = document.createElement('option');
-//   option.value = product.id;
-//   option.text = product.name;
-//   selectElement.appendChild(option);
-// });
