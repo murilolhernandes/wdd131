@@ -3,57 +3,88 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Cup Rugby Legends</title>
+    <title>Rugby World Cup Legends</title>
     <meta name="author" content="Murilo Hernandes">
-    <meta name="description" content="World Cup Rugby Legends fan website">
-    <link rel="stylesheet" href="styles/world-cup-rugby-legends.css">
-    <script src="scripts/world-cup-rugby-legends.js" defer></script>
+    <meta name="description" content="Rugby World Cup Legends fan website">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body>
     <header>
-      <h1><span class="icon">🏉</span>WORLD CUP RUGBY LEGENDS<span class="icon">🏉</span></h1>
+      <h1><span class="icon">🏉</span>RUGBY WORLD CUP LEGENDS<span class="icon">🏉</span></h1>
     </header>
     <main>
       <div class="hero">
-        <img src="images/springboks.webp" alt="Springboks">
-        <img src="images/allblacks.webp" alt="All Blacks">
-        <img src="images/wallabies.webp" alt="Wallabies">
-        <img src="images/redandwhites.webp" alt="Red and Whites">
+        <picture>
+          <source srcset="images/springboks-large.webp" media="(min-width: 1000px)">
+          <img src="images/springboks.webp" alt="Springboks">
+        </picture>
+        <picture>
+          <source srcset="images/allblacks-large.webp" media="(min-width: 1000px)">
+          <img src="images/allblacks.webp" alt="All Blacks">
+        </picture>
+        <picture>
+          <source srcset="images/wallabies-large.webp" media="(min-width: 1000px)">
+          <img src="images/wallabies.webp" alt="Wallabies">
+        </picture>
+        <picture>
+          <source srcset="images/redandwhites-large.webp" media="(min-width: 1000px)">
+          <img src="images/redandwhites.webp" alt="Red and Whites">
+        </picture>
       </div>
-      <article class="champions">
-        <img src="images/springboks2.webp" alt="Springboks 2">
+
+      <div class="champions">
+        <picture>
+          <source srcset="images/springboks2-large.webp" media="(min-width: 1000px)">
+          <img src="images/springboks2.webp" alt="Springboks 2">
+        </picture>
         <div>
-          <p>Information about South Africa</p>
-          <p>The South Africa national rugby union team, commonly known as the Springboks, is the country's national team governed by the South African Rugby Union. The Springboks play in green and gold jerseys with white shorts, and their emblem is the Springbok, a native antelope and the national animal of South Africa.</p>
-          <p>movie</p>
+          <h2>South Africa</h2>
+          <p class="info">The South Africa national rugby union team, commonly known as the Springboks, is the country's national team governed by the South African Rugby Union. The Springboks play in green and gold jerseys with white shorts, and their emblem is the Springbok, a native antelope and the national animal of South Africa.</p>
+          <p class="info"><span class="quote">Invictus</span> - is a 2009 biographical sports film directed by Clint Eastwood, starring Morgan Freeman and Matt Damon.</p>
+          <p class="info">The story is based on the 2008 John Carlin book Playing the Enemy: Nelson Mandela and the Game That Made a Nation about the events in South Africa before and during the 1995 Rugby World Cup. Freeman portrays South African President Nelson Mandela while Damon played Francois Pienaar, the captain of the Springboks, the South Africa rugby union team.</p>
         </div>
-        <img src="images/allblacks2.webp" alt="All Blacks 2">
+        <picture>
+          <source srcset="images/allblacks2-large.webp" media="(min-width: 1000px)">
+          <img src="images/allblacks2.webp" alt="All Blacks 2">
+        </picture>
         <div>
-          <p>Information about New Zealand</p>
-          <p>The New Zealand national rugby union team, commonly known as the All Blacks, represents New Zealand in men's international rugby union, which is considered the country's national sport. Famed for their international success, the All Blacks have often been regarded as one of the most successful sports teams in history.</p>
+          <h2>New Zealand</h2>
+          <p class="info">The New Zealand national rugby union team, commonly known as the All Blacks, represents New Zealand in men's international rugby union, which is considered the country's national sport. Famed for their international success, the All Blacks have often been regarded as one of the most successful sports teams in history.</p>
+          <p class="info"> Since their international debut in 1903, the All Blacks have played test matches against 19 nations, of which 12 have never won a game against the team. New Zealand has a 76 percent winning record in test match rugby, and has secured more wins than losses against every test opponent. The team has also played against three multinational all–star teams, losing only 8 of 45 matches. Since the introduction of the World Rugby Rankings in 2003, New Zealand has held the number-one ranking longer than all other teams combined. They jointly hold the record for the most consecutive test match wins for a tier-one ranked nation, along with England.</p>
         </div>
-        <img src="images/redandwhites2.webp" alt="Red and Whites 2">
+        <picture>
+          <source srcset="images/redandwhites2-large.webp" media="(min-width: 1000px)">
+          <img src="images/redandwhites2.webp" alt="Red and Whites 2">
+        </picture>
         <div>
-          <p>Information about England</p>
-          <p>The England national rugby union team represents the Rugby Football Union in men's international rugby union. They compete in the annual Six Nations Championship with France, Ireland, Italy, Scotland and Wales.</p>
+          <h2>England</h2>
+          <p class="info">The England national rugby union team represents the Rugby Football Union in men's international rugby union. They compete in the annual Six Nations Championship with France, Ireland, Italy, Scotland and Wales.</p>
+          <p class="info">England have won the championship on 29 occasions (as well as sharing 10 victories), winning the Grand Slam 14 times and the Triple Crown 26 times, making them the most successful outright winners in the tournament's history. They are currently the only team from the Northern Hemisphere to win the Rugby World Cup, having won the tournament in 2003, and have been runners-up on three further occasions.</p>
         </div>
-        <img src="images/lospumas.webp" alt="Los Pumas">
+        <picture>
+          <source srcset="images/lospumas-large.webp" media="(min-width: 1000px)">
+          <img src="images/lospumas.webp" alt="Los Pumas">
+        </picture>
         <div>
-          <p>Information about Argentina</p>
-          <p>The Argentina national rugby union team represents Argentina in men's international competitions, The Argentine Rugby Union. Officially nicknamed Los Pumas, they play in sky blue and white jerseys. They are ranked 5th in the world by World Rugby, making them by some distance the highest-ranked nation in the Americas.</p>
+          <h2>Argentina</h2>
+          <p class="info">The Argentina national rugby union team represents Argentina in men's international competitions, The Argentine Rugby Union. Officially nicknamed Los Pumas, they play in sky blue and white jerseys. They are ranked 5th in the world by World Rugby, making them by some distance the highest-ranked nation in the Americas.</p>
+          <p class="info">Argentina played its first international rugby match in 1910 against a touring British Isles team. Argentina has competed at every Rugby World Cup since the first tournament of 1987 and are considered by far the strongest team within the Americas, being undefeated against all but Canada, against whom they have suffered two losses.
+
+            The Pumas' impressive results since the 1999 World Cup have seen rugby's popularity in Argentina grow significantly. They have achieved several upset victories and are capable of regularly defeating Six Nations sides. In the 2007 Rugby World Cup, Argentina were undefeated in their pool and reached the semi-finals for the first time; they were defeated by South Africa in the semi-finals, but followed up with a win over France to claim third place overall. By the end of the competition, the team had reached an all-time high of third in the World Rankings.</p>
         </div>
-      </article>
-      <section class="standings">
+      </div>
+      <div class="standings">
         <table>
           <caption>World Cup Rugby Standings from last World Cup</caption>
           <thead>
             <tr>
-              <th scope="col">National Teams</th>
-              <th scope="col">Nicknames</th>
-              <th scope="col">Rankings - per last World Cup</th>
+              <th scope="col">National Team</th>
+              <th scope="col">Nickname</th>
+              <th scope="col">Ranking - per last World Cup</th>
               <th scope="col">Number of World Cups won</th>
             </tr>
           </thead>
@@ -84,8 +115,8 @@
             </tr>
           </tbody>
         </table>
-      </section>
-      <section class="future">
+      </div>
+      <div class="future">
         <table>
           <caption>Future World Cups</caption>
           <thead>
@@ -117,7 +148,7 @@
             </tr>
           </tbody>
         </table>
-      </section>
+      </div>
       <div class="countdown">
         <span id="countdown"></span>
       </div>
