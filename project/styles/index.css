@@ -39,14 +39,9 @@ h2, caption {
   text-align: center;
 }
 
-/* .champions div{
-  max-width: 300px;
-  text-align: center;
-} */
-
 .info {
   font-family: "Roboto", sans-serif;
- padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .standings {
@@ -57,7 +52,6 @@ h2, caption {
   font-family: "Bangers", "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
-  /* font-style: italic; */
 }
 
 .square, .square nav {
