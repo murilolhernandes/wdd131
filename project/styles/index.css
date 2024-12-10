@@ -22,11 +22,6 @@ h1 {
   color: #ffbf00;
 }
 
-h2, caption {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #333333;
-}
 
 /* ---------- Main ---------- */
 body {
@@ -37,10 +32,21 @@ img {
   display: block;
 }
 
-.champions div{
+h2, caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+/* .champions div{
   max-width: 300px;
-  /* text-align: center; */
+  text-align: center;
+} */
+
+.info {
   font-family: "Roboto", sans-serif;
+ padding: 0 1rem;
 }
 
 .standings {
