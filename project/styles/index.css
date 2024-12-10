@@ -119,6 +119,22 @@ tbody th:first-child {
   margin-bottom: 1rem;
 }
 
+
+.countdown {
+  display: flex;
+  text-align: center;
+}
+
+#countdown {
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  border: 1px solid rgba(140, 140, 140, 0.6);
+  color: #ffbf00;
+  background-color: #003366;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 /* ---------- Footer ---------- */
 footer {
   display: flex;
