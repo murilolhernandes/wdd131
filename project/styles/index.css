@@ -4,7 +4,7 @@
   width: 100%;
   text-decoration: none;
   box-sizing: border-box;
-  text-align: center;
+  /* text-align: center; */
 }
 
 
@@ -39,7 +39,7 @@ img {
 
 .champions div{
   max-width: 300px;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Roboto", sans-serif;
 }
 
