@@ -12,10 +12,6 @@ function daysUntilWorldCup() {
 
 document.getElementById("countdown").innerHTML = daysUntilWorldCup() + " days until the next Rugby World Cup"
 
-document.getElementById("springboks").addEventListener("click", function() {
-  location.href = "springboks.html";
-});
-
 document.getElementById("formpage").addEventListener("click", function() {
   location.href = "formpage.html";
 });

@@ -54,6 +54,24 @@ h2, caption {
   font-size: 1.2rem;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #003366;
+  color: #ffbf00;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 50%;
+}
+
 .square, .square nav {
   width: 800px;
   display: flex;
@@ -119,6 +137,9 @@ tbody th:first-child {
   margin-bottom: 1rem;
 }
 
+.countdown-container {
+  margin: 1rem 0;
+}
 
 .countdown {
   display: flex;
@@ -144,9 +165,9 @@ footer {
   padding: 1rem 0;
   text-align: center;
   font-family: "roboto", sans-serif;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
-footer a {
+a {
   color: #ffbf00;
 }
