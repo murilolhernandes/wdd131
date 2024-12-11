@@ -94,7 +94,7 @@ fieldset {
 }
 
 .required {
-  color: red;
+  color: darkred;
 }
 
 /* --------- Review Stars ---------- */
