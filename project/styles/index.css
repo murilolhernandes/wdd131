@@ -35,8 +35,54 @@ img {
 
 .hero-container {
   border: 1rem double #ffbf00;
+  position: relative;
+  overflow: hidden;
 }
 
+.hero-image {
+  display: none;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+
+}
+
+img.displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+.left-arrow, .right-arrow {
+  width: 48px;
+  border: 1px solid #eee;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10px;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.left-arrow:hover, .right-arrow:hover, .left-arrow:focus, .right-arrow:focus {
+  max-width: 48px;
+  border: 1px solid #ffbf00;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  cursor: pointer;
+}
 
 h2, caption {
   font-family: "Montserrat", sans-serif;
@@ -69,7 +115,7 @@ h2, caption {
   justify-content: center;
 }
 
-button {
+#springboks, #formpage {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1rem;
