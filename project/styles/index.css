@@ -20,6 +20,7 @@ h1 {
   margin: 0;
   padding: 4rem 0;
   color: #ffbf00;
+  font-size: 2rem;
 }
 
 
@@ -32,35 +33,20 @@ img {
   display: block;
 }
 
-.fade-image {
-  position: relative;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+.hero-container {
+  border: 1rem double #ffbf00;
 }
 
-.fade-image.fade-out::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  opacity: 1;
-  /* transform: translateY(100%); */
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-image.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
 
 h2, caption {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #333333;
   text-align: center;
+}
+
+.champions {
+  margin-top: 2rem;
 }
 
 .info {
