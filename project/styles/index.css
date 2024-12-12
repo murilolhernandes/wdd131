@@ -95,15 +95,7 @@ h2, caption {
 
 .champions {
   margin-top: 2rem;
-  /* display: flex;
-  flex-direction: column; */
-  /* grid-template-columns: 1fr 1fr */
 }
-
-/* .champions img {
-  width: 500px;
-  height: 281px;
-} */
 
 .info {
   font-family: "Roboto", sans-serif;
@@ -230,6 +222,12 @@ tbody th:first-child {
   width: 100%;
   margin: 0 auto;
   max-width: 500px;
+}
+
+.siteplan a, .south-africa a, .new-zealand a, .england a, .argentina a, .australia a {
+  padding: 10px;
+  color: black;
+  font-family: "roboto", sans-serif;
 }
 
 /* ---------- Footer ---------- */
