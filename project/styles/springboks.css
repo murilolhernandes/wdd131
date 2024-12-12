@@ -32,61 +32,7 @@ img {
   display: block;
 }
 
-.hero-container {
-  border: 1rem double #ffbf00;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-image {
-  display: none;
-  width: 100%;
-  object-fit: cover;
-  height: 200px;
-}
-
-.image3, .image4 {
-  object-position: top;
-
-}
-
-img.displaySlide {
-  display: block;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {opacity: .5}
-  to {opacity: 1}
-}
-
-.left-arrow, .right-arrow {
-  width: 48px;
-  border: 1px solid #eee;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 10px;
-}
-
-.left-arrow {
-  left: 0;
-}
-
-.right-arrow {
-  right: 0;
-}
-
-.left-arrow:hover, .right-arrow:hover, .left-arrow:focus, .right-arrow:focus {
-  max-width: 48px;
-  border: 1px solid #ffbf00;
-  cursor: pointer;
-}
-
-h2, caption {
+h2, h3, caption {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #333333;
@@ -102,7 +48,7 @@ h2, caption {
   padding: 0 2rem;
 }
 
-.standings {
+.matches {
   margin-top: 1rem;
 }
 
@@ -133,13 +79,6 @@ h2, caption {
 
 #springboks:hover, #formpage:hover, #springboks:focus, #formpage:focus {
   cursor: pointer;
-}
-
-.square, .square nav {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 table {
@@ -177,29 +116,45 @@ th:first-child, td:first-child {
 }
 
 th:nth-child(2), td:nth-child(2) {
-  width: 25%;
+  width: 20%;
   border-right: 1px solid rgba(140, 140, 140, 0.6);
   border-bottom: 1px solid rgba(140, 140, 140, 0.6);
 }
 
 th:nth-child(3), td:nth-child(3) {
-  width: 30%;
+  width: 20%;
   border-right: 1px solid rgba(140, 140, 140, 0.6);
   border-bottom: 1px solid rgba(140, 140, 140, 0.6);
 }
 
 th:nth-child(4), td:nth-child(4) {
+  width: 20%;
+  border-right: 1px solid rgba(140, 140, 140, 0.6);
+  border-bottom: 1px solid rgba(140, 140, 140, 0.6);
+}
+
+th:nth-child(5), td:nth-child(5) {
   width: 25%;
   border-bottom: 1px solid rgba(140, 140, 140, 0.6);
 }
 
-tbody th:first-child {
+tbody td:nth-child(2), tbody td:nth-child(4) {
   font-family: "Bangers", "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-.future table {
+tbody th:nth-child(1) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.players table {
   margin-bottom: 1rem;
+}
+
+.players tbody td:nth-child(4) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .countdown-container {
