@@ -191,6 +191,7 @@ function prevSlide() {
 }
 
 function nextSlide() {
+  clearInterval(intervalId);
   slideIndex++;
   showSlide(slideIndex);
 }

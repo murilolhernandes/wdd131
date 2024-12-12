@@ -43,14 +43,18 @@ img {
   display: none;
   width: 100%;
   object-fit: cover;
-  height: 300px;
+  height: 200px;
+}
+
+.image3, .image4 {
+  object-position: top;
 
 }
 
 img.displaySlide {
   display: block;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
@@ -80,7 +84,6 @@ img.displaySlide {
 .left-arrow:hover, .right-arrow:hover, .left-arrow:focus, .right-arrow:focus {
   max-width: 48px;
   border: 1px solid #ffbf00;
-  /* background-color: rgba(0, 0, 0, 0.3); */
   cursor: pointer;
 }
 
@@ -126,6 +129,11 @@ h2, caption {
   padding: 1rem;
   margin: 1rem 0;
   width: 50%;
+  max-width: 300px;
+}
+
+#springboks:hover, #formpage:hover, #springboks:focus, #formpage:focus {
+  cursor: pointer;
 }
 
 .square, .square nav {
@@ -142,6 +150,8 @@ table {
   font-family: "Roboto", sans-serif;
   text-align: center;
   table-layout: fixed;
+  max-width: 1000px;
+  height: 400px;
 }
 
 caption {
@@ -210,6 +220,9 @@ tbody th:first-child {
   background-color: #003366;
   font-weight: bold;
   font-size: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 /* ---------- Footer ---------- */
