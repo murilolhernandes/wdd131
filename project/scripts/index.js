@@ -42,28 +42,28 @@ document.getElementById("formpage").addEventListener("click", function() {
 
 let images = [
   {
-    src: "images/springboks.webp",
+    src: "images/springboks1.webp",
     srcset: "images/springboks-large.webp",
     media: "(min-width: 1000px)",
     loading: "lazy",
     alt: "Springboks"
   },
   {
-    src: "images/allblacks.webp",
+    src: "images/allblacks1.webp",
     srcset: "images/allblacks-large.webp",
     media: "(min-width: 1000px)",
     loading: "lazy",
     alt: "All Blacks"
   },
   {
-    src: "images/wallabies.webp",
+    src: "images/wallabies1.webp",
     srcset: "images/wallabies-large.webp",
     media: "(min-width: 1000px)",
     loading: "lazy",
     alt: "Wallabies"
   },
   {
-    src: "images/redandwhites.webp",
+    src: "images/redandwhites1.webp",
     srcset: "images/redandwhites-large.webp",
     media: "(min-width: 1000px)",
     loading: "lazy",

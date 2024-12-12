@@ -95,15 +95,7 @@ h2, caption {
 
 .champions {
   margin-top: 2rem;
-  /* display: flex;
-  flex-direction: column; */
-  /* grid-template-columns: 1fr 1fr */
 }
-
-/* .champions img {
-  width: 500px;
-  height: 281px;
-} */
 
 .info {
   font-family: "Roboto", sans-serif;
