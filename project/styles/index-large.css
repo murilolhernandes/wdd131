@@ -1,4 +1,4 @@
-@media (min-width: 200px) {
+/* @media (min-width: 200px) {
   .champions img {
     width: 200px;
     height: 180px;
@@ -24,21 +24,21 @@
     height: 281px;
   }
   .info {
-    width: 400px;
+    width: 500px;
   } 
-}
+} */
 
 @media (min-width: 700px) {
   .hero-image img {
     height: 300px;
   }
-  .champions img {
+  /* .champions img {
     width: 600px;
     height: 450px;
   }
   .info {
     width: 600px;
-  } 
+  }  */
 }
 
 
@@ -60,7 +60,7 @@
   
   .champions {
     max-width: 1300px;
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
   }
