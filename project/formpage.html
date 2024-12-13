@@ -54,7 +54,7 @@
           <label for="youtube">Share your favorite play from the last RWC <span class="optional">(optional)</span>
             <textarea id="youtube" name="youtube" rows="8" cols="30" placeholder="My favorite play was..."></textarea>
           </label>
-          <input type="submit" class="submit3" value="Share my favorite play">
+          <input type="submit" class="submit" value="Share my favorite play">
         </fieldset>
       </form>
       <form method="get" class="updates hide">
@@ -66,7 +66,7 @@
           <label for="update">Share the update we should make to the page <span class="optional">(optional)</span>
             <textarea id="update" name="article" rows="8" cols="30" placeholder="There's been an update on the..."></textarea>
           </label>
-          <input type="submit" class="submit4" value="Share my contribution">
+          <input type="submit" class="submit" value="Share my contribution">
         </fieldset>
       </form>
       <form method="get" class="suggestion hide">
@@ -79,7 +79,7 @@
           <label for="suggestion">Suggestion <span class="required">*</span>
             <textarea id="suggestion" name="suggestion" rows="8" cols="30" placeholder="I would like to suggest..." required></textarea>
           </label>
-          <input type="submit" class="submit5" value="Send my suggestion">
+          <input type="submit" class="submit" value="Send my suggestion">
         </fieldset>
       </form>
       <form method="get" class="newsletter hide">
@@ -91,10 +91,13 @@
           <label>Last Name <span class="optional">(optional)</span><input type="text" name="lname" placeholder="Doe"></label>
           <label><input type="checkbox" name="newsletter" value="agreement" required>I agree to receive monthly newsletter emails <span class="required">*</span></label>
           <label><input type="checkbox" name="promotional" value="agreement">I agree to promotional emails <span class="optional">(optional)</span></label>
-          <input type="submit" class="submit6" value="Sign up">
+          <input type="submit" class="submit" value="Sign up">
         </fieldset>
       </form>
-      <div class="storage hide">localStorage goes here</div>
+      <div class="thank-you hide">
+        <h2>Thank you for your submission!</h2>
+        <p class="info" id="message"></p>
+      </div>
     </main>
     <footer>
       <span id="currentYear"></span>

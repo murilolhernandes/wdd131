@@ -27,6 +27,20 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.info {
+  font-family: "Roboto", sans-serif;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .hide {
   display: none;
 }
