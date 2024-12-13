@@ -21,30 +21,30 @@
     <main>
       <form class="choose mutual">
         <fieldset>
-          <legend>What would you like to do?</legend>
-          <div>What would you like to do? <span class="required">*</span></div>
+          <legend>Choose a form to submit</legend>
           <div>Required fields are marked with an <span class="required">*</span></div>
-          <label><input type="radio" name="choose" value="question" required>Submit a question</label>
-          <label><input type="radio" name="choose" value="share">Share your favorite play from the last RWC</label>
-          <label><input type="radio" name="choose" value="updates">Submit a news article or updates for the page</label>
-          <label><input type="radio" name="choose" value="suggestion">Submit a suggestion</label>
-          <label><input type="radio" name="choose" value="newsletter">Sign up for our newsletter</label>
+          <div>What would you like to do? <span class="required">*</span></div>
+          <label class="radio"><input type="radio" name="choose" value="question" required>Submit a question</label>
+          <label class="radio"><input type="radio" name="choose" value="share">Share your favorite play from the last RWC</label>
+          <label class="radio"><input type="radio" name="choose" value="updates">Submit a news article or updates for the page</label>
+          <label class="radio"><input type="radio" name="choose" value="suggestion">Submit a suggestion</label>
+          <label class="radio"><input type="radio" name="choose" value="newsletter">Sign up for our newsletter</label>
+          <input type="submit" class="submit" value="Choose this option">
         </fieldset>
-        <input type="submit" class="submit" value="Choose this option">
       </form>
-      <form class="question hide">
+      <form method="get" class="question hide">
         <fieldset>
           <legend>Submit a question</legend>
           <div>Required fields are marked with an <span class="required">*</span></div>
-          <label>Name <span class="required">*</span><input type="text" name="name" placeholder="John Doe"></label>
-          <label>Email <span class="required">*</span><input type="email" name="email" placeholder="johndoe@gmail.com"></label>
+          <label>Name <span class="required">*</span><input type="text" name="name" placeholder="John Doe" required></label>
+          <label>Email <span class="required">*</span><input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
           <label for="question">Question <span class="required">*</span>
             <textarea id="question" name="question" rows="8" cols="30" placeholder="I would like to ask..." required></textarea>
           </label>
+          <input type="submit" class="submit2" value="Send my question">
         </fieldset>
-        <input type="submit" class="submit2" value="Send my question">
       </form>
-      <form class="share hide">
+      <form method="get" class="share hide">
         <fieldset>
           <legend>Share your favorite play</legend>
           <div>Required fields are marked with an <span class="required">*</span></div>
@@ -53,10 +53,10 @@
           <label for="youtube">Share your favorite play from the last RWC <span class="optional">(optional)</span>
             <textarea id="youtube" name="youtube" rows="8" cols="30" placeholder="My favorite play was..."></textarea>
           </label>
+          <input type="submit" class="submit3" value="Share my favorite play">
         </fieldset>
-        <input type="submit" class="submit3" value="Share my favorite play">
       </form>
-      <form class="updates hide">
+      <form method="get" class="updates hide">
         <fieldset>
           <legend>Submit a news article or updates</legend>
           <div>Required fields are marked with an <span class="required">*</span></div>
@@ -65,10 +65,10 @@
           <label for="update">Share the update we should make to the page <span class="optional">(optional)</span>
             <textarea id="update" name="article" rows="8" cols="30" placeholder="There's been an update on the..."></textarea>
           </label>
+          <input type="submit" class="submit4" value="Share my contribution">
         </fieldset>
-        <input type="submit" class="submit4" value="Share my contribution">
       </form>
-      <form class="suggestion hide">
+      <form method="get" class="suggestion hide">
         <fieldset>
           <legend>Submit a suggestion</legend>
           <div>Required fields are marked with an <span class="required">*</span></div>
@@ -78,26 +78,22 @@
           <label for="suggestion">Suggestion <span class="required">*</span>
             <textarea id="suggestion" name="suggestion" rows="8" cols="30" placeholder="I would like to suggest..." required></textarea>
           </label>
+          <input type="submit" class="submit5" value="Send my suggestion">
         </fieldset>
-        <input type="submit" class="submit5" value="Send my suggestion">
       </form>
-      <form class="newsletter hide">
+      <form method="get" class="newsletter hide">
         <fieldset>
           <legend>Sign up for our newsletter</legend>
           <div>Required fields are marked with an <span class="required">*</span></div>
           <label>Email <span class="required">*</span><input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
           <label>First Name <span class="required">*</span><input type="text" name="fname" placeholder="John" required></label>
           <label>Last Name <span class="optional">(optional)</span><input type="text" name="lname" placeholder="Doe"></label>
-          <label><input type="checkbox" name="newsletter" required>I agree to receive monthly newsletter emails <span class="required">*</span></label>
-          <label><input type="checkbox" name="newsletter">I agree to promotional emails <span class="optional">(optional)</span></label>
+          <label><input type="checkbox" name="newsletter" value="agreement" required>I agree to receive monthly newsletter emails <span class="required">*</span></label>
+          <label><input type="checkbox" name="promotional" value="agreement">I agree to promotional emails <span class="optional">(optional)</span></label>
+          <input type="submit" class="submit6" value="Sign up">
         </fieldset>
-        <input type="submit" class="submit6" value="Sign up">
       </form>
-      <div class="countdown-container">
-        <div class="countdown">
-          <span id="countdown"></span>
-        </div>
-      </div>
+      <div class="storage hide">localStorage goes here</div>
     </main>
     <footer>
       <span id="currentYear"></span>

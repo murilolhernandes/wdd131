@@ -1,9 +1,9 @@
 * {
-  justify-self: center;
   max-width: 2600px;
   width: 100%;
   text-decoration: none;
   box-sizing: border-box;
+  margin: 0;
   /* text-align: center; */
 }
 
@@ -28,37 +28,104 @@ body {
   margin: 0 auto;
 }
 
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #333333;
-  text-align: center;
-}
-
 .hide {
   display: none;
 }
 
-.countdown-container {
-  margin: 1rem 0;
-}
-
-.countdown {
-  display: flex;
-  text-align: center;
-}
-
-#countdown {
+form {
+  max-width: 1000px;
+  margin: 1rem auto;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+fieldset {
+  border-radius: 10px;
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  padding: .5rem 2%;
+}
+
+legend {
+  color: #333333;
+  width: auto;
+  display: table;
+  white-space: normal;
+}
+
+.required {
+  color: darkred;
+}
+
+.optional {
+  color: darkblue;
+}
+
+label {
+  display: block;
   padding: 1rem;
-  border: 1px solid rgba(140, 140, 140, 0.6);
-  color: #ffbf00;
-  background-color: #003366;
-  font-weight: bold;
-  font-size: 1.2rem;
-  width: 100%;
-  margin: 0 auto;
+  /* max-width: 500px;
+  width: 100%; */
+
+}
+
+textarea, input[type="text"], input[type="email"], input[type="url"] {
+  display: block;
+  /* margin-left: 0; */
   max-width: 500px;
+  width: 100%;
+  font-family: "roboto", sans-serif;
+  padding: .75rem;
+  font-size: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(140, 140, 140, 0.6);
+  background-color: #eee;
+}
+
+button, input {
+  overflow: visible;
+}
+
+form label input[type="radio"], form label input[type="checkbox"] {
+  margin-right: 6px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.radio {
+  display: flex;
+}
+
+form input:required:valid, form textarea:required:valid {
+  border-bottom: 8px solid green;
+}
+
+form input:required, form textarea:required {
+  border-bottom: 8px solid red;
+}
+
+form div {
+  padding: 0.5rem 1rem;
+}
+
+input[type="submit"] {
+  background-color: #003366;
+  color: #ffbf00;
+  border-radius: 6px;
+  border: 1px solid #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: .6rem 0;
+  max-width: 500px;
+  appearance: none;
+  padding: .75rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 /* ---------- Footer ---------- */
