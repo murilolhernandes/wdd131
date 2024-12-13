@@ -1,0 +1,59 @@
+* {
+  justify-self: center;
+  max-width: 2600px;
+  width: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  background-color: #003366;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 3rem 0;
+  color: #ffbf00;
+  font-size: 1.5rem;
+}
+
+/* ---------- Main ---------- */
+
+body {
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.square, .square nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.siteplan a, .south-africa a, .new-zealand a, .england a, .argentina a, .australia a {
+  padding: 10px;
+  color: black;
+  font-family: "roboto", sans-serif;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #003366;
+  color: #ffbf00;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  margin-top: 2rem;
+}
