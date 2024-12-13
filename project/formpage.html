@@ -6,20 +6,93 @@
     <title>South African Springboks</title>
     <meta name="author" content="Murilo Hernandes">
     <meta name="description" content="South African Springboks fan website">
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/springboks.js" defer></script>
+    <link rel="stylesheet" href="styles/formpage.css">
+    <script src="scripts/formpage.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body>
     <header>
-      <h1><nav><a href="index.html"><span class="icon">🏉</span>RUGBY WORLD CUP LEGENDS<span class="icon">🏉</span></a></nav></h1>
+      <nav><a href="index.html">
+        <h1><span class="icon">🏉</span>RUGBY WORLD CUP LEGENDS<span class="icon">🏉</span></h1>
+      </a></nav>
     </header>
     <main>
-      <table>
-        
-      </table>
+      <form class="choose mutual">
+        <fieldset>
+          <legend>What would you like to do?</legend>
+          <div>What would you like to do? <span class="required">*</span></div>
+          <div>Required fields are marked with an <span class="required">*</span></div>
+          <label><input type="radio" name="choose" value="question" required>Submit a question</label>
+          <label><input type="radio" name="choose" value="share">Share your favorite play from the last RWC</label>
+          <label><input type="radio" name="choose" value="updates">Submit a news article or updates for the page</label>
+          <label><input type="radio" name="choose" value="suggestion">Submit a suggestion</label>
+          <label><input type="radio" name="choose" value="newsletter">Sign up for our newsletter</label>
+        </fieldset>
+        <input type="submit" class="submit" value="Choose this option">
+      </form>
+      <form class="question hide">
+        <fieldset>
+          <legend>Submit a question</legend>
+          <div>Required fields are marked with an <span class="required">*</span></div>
+          <label>Name <span class="required">*</span><input type="text" name="name" placeholder="John Doe"></label>
+          <label>Email <span class="required">*</span><input type="email" name="email" placeholder="johndoe@gmail.com"></label>
+          <label for="question">Question <span class="required">*</span>
+            <textarea id="question" name="question" rows="8" cols="30" placeholder="I would like to ask..." required></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" class="submit2" value="Send my question">
+      </form>
+      <form class="share hide">
+        <fieldset>
+          <legend>Share your favorite play</legend>
+          <div>Required fields are marked with an <span class="required">*</span></div>
+          <label>Name <span class="optional">(optional)</span><input type="text" name="name" placeholder="John Doe"></label>
+          <label>Youtube Link <span class="optional">(optional)</span><input type="url" name="url" placeholder="https://www.youtube.com/"></label>
+          <label for="youtube">Share your favorite play from the last RWC <span class="optional">(optional)</span>
+            <textarea id="youtube" name="youtube" rows="8" cols="30" placeholder="My favorite play was..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" class="submit3" value="Share my favorite play">
+      </form>
+      <form class="updates hide">
+        <fieldset>
+          <legend>Submit a news article or updates</legend>
+          <div>Required fields are marked with an <span class="required">*</span></div>
+          <label>Name <span class="optional">(optional)</span><input type="text" name="name" placeholder="John Doe"></label>
+          <label>Website <span class="optional">(optional)</span><input type="url" name="url" placeholder="http://"></label>
+          <label for="update">Share the update we should make to the page <span class="optional">(optional)</span>
+            <textarea id="update" name="article" rows="8" cols="30" placeholder="There's been an update on the..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" class="submit4" value="Share my contribution">
+      </form>
+      <form class="suggestion hide">
+        <fieldset>
+          <legend>Submit a suggestion</legend>
+          <div>Required fields are marked with an <span class="required">*</span></div>
+          <label>First Name <span class="optional">(optional)</span><input type="text" name="fname" placeholder="John"></label>
+          <label>Last Name <span class="optional">(optional)</span><input type="text" name="lname" placeholder="Doe"></label>
+          <label>Email<span class="optional">(optional)</span><input type="email" name="email" placeholder="johndoe@gmail.com"></label>
+          <label for="suggestion">Suggestion <span class="required">*</span>
+            <textarea id="suggestion" name="suggestion" rows="8" cols="30" placeholder="I would like to suggest..." required></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" class="submit5" value="Send my suggestion">
+      </form>
+      <form class="newsletter hide">
+        <fieldset>
+          <legend>Sign up for our newsletter</legend>
+          <div>Required fields are marked with an <span class="required">*</span></div>
+          <label>Email <span class="required">*</span><input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+          <label>First Name <span class="required">*</span><input type="text" name="fname" placeholder="John" required></label>
+          <label>Last Name <span class="optional">(optional)</span><input type="text" name="lname" placeholder="Doe"></label>
+          <label><input type="checkbox" name="newsletter" required>I agree to receive monthly newsletter emails <span class="required">*</span></label>
+          <label><input type="checkbox" name="newsletter">I agree to promotional emails <span class="optional">(optional)</span></label>
+        </fieldset>
+        <input type="submit" class="submit6" value="Sign up">
+      </form>
       <div class="countdown-container">
         <div class="countdown">
           <span id="countdown"></span>
