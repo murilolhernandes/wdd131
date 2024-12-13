@@ -1,0 +1,41 @@
+@media (min-width: 320px) {
+  form {
+    max-width: 400px;
+  }
+  textarea, input[type="text"], input[type="email"], input[type="url"], input[type="submit"] {
+    max-width: 400px;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    width: 92%;
+  }
+}
+
+@media (min-width: 400px) {
+  form {
+    max-width: 400px;
+  }
+  textarea, input[type="text"], input[type="email"], input[type="url"], input[type="submit"] {
+    max-width: 400px;
+  }
+
+  .radio {
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (min-width: 600px) {
+  form {
+    max-width: 1000px;
+  }
+  textarea, input[type="text"], input[type="email"], input[type="url"], input[type="submit"] {
+    max-width: 500px;
+  }
+
+  input[type="submit"] {
+    margin: 0 1rem 1rem 1rem;
+
+  }
+}
